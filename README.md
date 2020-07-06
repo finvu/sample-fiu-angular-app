@@ -1,5 +1,9 @@
 # FIUDemo
 
+This is a sample FIU application which uses the Finvu AA web API for providing a seamless integration with Finvu Account Aggregator. 
+
+Refer to our [Finvu API Docs](https://finvu.github.io/sandbox) for integration with the Finvu Web APIs.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
 ## Development server
