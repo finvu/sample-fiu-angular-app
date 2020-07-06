@@ -1,0 +1,196 @@
+
+.btn-secondary, .btn-secondary.active {
+  background-image: none;
+  border: none;
+  outline: none;
+  font: normal 16px/normal "lato", Helvetica, sans-serif;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: rgba(255,255,255,0.9);
+  background:#039BE5;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  border-radius: 5px;
+}
+
+.btn-consent-secondary, .btn-secondary.active {
+  background-image: none;
+  border: none;
+  outline: none;
+  font: normal 14px/normal "lato", Helvetica, sans-serif;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: rgb(187, 190, 192);
+  color: white;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  border-radius: 5px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  background: transparent;
+  border: none;
+  border-radius: 0%;
+  border-bottom: 1px solid #ccc;
+  outline:none;
+  box-shadow:none;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control {
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-color: #D4D4D4;
+  border-radius: 5PX;
+  font-size: 12px;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+font-size: 75%;
+-webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+opacity: 1;
+}
+
+.h6 {
+  text-align: center;
+  color: #039BE5;
+}
+
+.stext {
+  text-align: center;
+  font-weight: normal;
+}
+
+.fading_line {
+  border:none;
+  height:2px;
+  background-image: linear-gradient(to right, rgba(204, 204, 204, 0), rgba(204, 204, 204, 0.75), rgba(204, 204, 204, 0));
+}
+
+.a {
+  color: #039BE5;
+  }
+
+.verticalLine {
+    border-left: thin solid #C0C0C0;
+}
+
+.container-name div {
+  display: inline-block;
+  height: auto;
+}
+
+div.vertical-line
+{
+width: 1px; /* Line width */ 
+background-color:#C0C0C0; /* Line color */ 
+height: 100%; /* Override in-line if you want specific height. */ 
+float: center; /* Causes the line to float to left of content. You can instead use position:absolute or display:inline-block if this fits better with your design */
+}
+  
+.imageDiv div{
+  height: 10px;
+  width: 10px;
+  align-items: flex-start;
+  }
+
+  .alert{
+    width:200px
+  }
+
+  .wrap {
+    width: 100%;
+    overflow:auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  .fleft {
+    float:left; 
+    height: 40px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  
+  .fcenter{
+    float:left;
+    vertical-align: middle;  
+    margin-left: 8px;
+  }
+  
+  .fright {
+    float: right;
+    height: 40px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .col1 {
+    float: left;
+    width: 45%;
+    font-size: 12px;
+  }
+  .col2 {
+    float: right;
+    width: 45%;
+    font-size: 12px;
+  }
+
+  .label-size{
+    font-size: 12px
+  }
+
+  .input-group {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .hide {
+    display: none;
+  }
+  p {
+    font-weight: bold;
+  }
+
+  .mat-spinner-color ::ng-deep circle{
+    stroke: #1a941e !important;
+  }
+
+  .a {
+    color: #1a941e;
+    font-size: 12px;
+  }
+
+  .next-button {
+    background-color: #1a941e;
+    color: white;
+  }
+
+  .light-green-color {
+    color:#1a941e;
+  }
+
+  .userInput:focus, .userInput:active {
+    border: red;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

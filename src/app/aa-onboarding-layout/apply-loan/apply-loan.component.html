@@ -1,0 +1,58 @@
+<div class="col-md-6 max-auto container-fluid">
+    <div class="col-md-6 mx-auto card user-card" style="margin-bottom: 10px;margin-top: 10px;">
+        <h6 class="h6 light-green-color" style="margin-top: 10px">Apply For Loan</h6>
+        <div class="col-md-6 mx-auto">
+            <hr class="fading_line">
+        </div>
+        <div [formGroup]="applyLoanForm">
+            <div class="form-row">
+                <div class="row col-md-9 mx-auto">
+                    <div class="input-group">
+                        <span class="input-group-prepend"><label class="input-group-text" style="background:#1a941e"><img src="assets/themify-icons/SVG/user.svg"></label></span>
+                        <input ngModel pattern="[a-zA-Z ]*" type="text" class="form-control" formControlName="name" placeholder="Enter name">
+                        <div class="input-group">
+                            <span style="float:left;" class="messages text-danger" *ngIf="applyLoanForm.controls['name'].hasError('required') && (applyLoanForm.controls['name'].dirty || applyLoanForm.controls['name'].touched)">Name is required</span>
+                            <span class="text-danger" *ngIf="applyLoanForm.controls['name'].hasError('pattern') && (applyLoanForm.controls['name'].dirty || applyLoanForm.controls['name'].touched)">Please enter valid name</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-prepend"><label class="input-group-text" style="background:#1a941e"><img src="assets/themify-icons/SVG/mobile.svg"></label></span>
+                        <input type="number" maxlength="10" class="form-control" formControlName="mobile" placeholder="Enter mobile number">
+                        <div class="input-group">
+                            <span style="float:left;" class="messages text-danger" *ngIf="applyLoanForm.controls['mobile'].hasError('required') 
+                                        && (applyLoanForm.controls['mobile'].dirty || applyLoanForm.controls['mobile'].touched)">Mobile number is required</span>
+                            <span class="text-danger" *ngIf="applyLoanForm.controls['mobile'].hasError('pattern') && (applyLoanForm.controls['mobile'].dirty || applyLoanForm.controls['mobile'].touched)">Please enter valid phone number</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-prepend"><label class="input-group-text" style="background:#1a941e"><img src="assets/images/rupee.svg"></label></span>
+                        <input type="text" class="form-control" formControlName="loanAmount" placeholder="Enter loan amount" (change)="addCommas($event.target.value)">
+                        <div class="input-group">
+                            <span style="float:left;" class="messages text-danger" *ngIf="applyLoanForm.controls['loanAmount'].hasError('required') && (applyLoanForm.controls['loanAmount'].dirty || applyLoanForm.controls['loanAmount'].touched)">Loan amount is required</span>
+                            <span class="text-danger" *ngIf="applyLoanForm.controls['loanAmount'].hasError('pattern') && (applyLoanForm.controls['loanAmount'].dirty || applyLoanForm.controls['loanAmount'].touched)">Please enter valid loan amount</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Share your last 6 months statement via account aggregator</label>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-prepend"><label class="input-group-text" style="background:#1a941e"><img src="assets/images/id.svg"></label></span>
+                        <input type="text" class="form-control" formControlName="aaId" placeholder="Enter Account Aggregator Id with @finvu" (change)="appendUserName($event.target.value)" [(value)]="values">
+                        <div class="input-group">
+                            <span style="float:left;" class="messages text-danger" *ngIf="applyLoanForm.controls['aaId'].hasError('required') && (applyLoanForm.controls['aaId'].dirty || applyLoanForm.controls['aaId'].touched)">Account Aggregator Id is required</span>
+                            <span class="text-danger" *ngIf="applyLoanForm.controls['aaId'].hasError('pattern') && (applyLoanForm.controls['aaId'].dirty || applyLoanForm.controls['aaId'].touched)">Please enter valid account aggregator id with @finvu</span>
+                        </div>
+                    </div>
+                    <div class="col-12" align="center">
+                        <label style="font-size: 12px;margin-top: 5px">OR</label>
+                    </div>
+                    <div class="col-12" align="center">
+                        <a class="a" href="javascript:;" (click)="navigate()">Register with Finvu</a>
+                    </div>
+
+                    <button type="submit" class="btn-secondary btn-block next-button" style="margin-top: 10px;margin-bottom: 10px" (click)="submitForm()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

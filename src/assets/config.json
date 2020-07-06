@@ -1,0 +1,11 @@
+{
+  "apiBaseUrl": "https://finsense.finvu.in/ConnectHub/FIU/API/V1",
+  
+  "registerPageUrl": "https://finvu.in/webview/onboarding/register",
+
+  "loginPageUrl": "https://finvu.in/webview/onboarding",
+
+  "fiuDemoPageUrl": "http://localhost:49156/"
+  
+  
+}
